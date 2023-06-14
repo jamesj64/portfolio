@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 :root {
+  --experience-background: #4d5456;
+  --link-highlighted: #55d4ff;
+  --skill-color: #92aaa5;
+  --skill-color-text: #f8f6f7;
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +31,9 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+body {
+  color:white;
+  background: rgb(38, 46, 49);
 }
