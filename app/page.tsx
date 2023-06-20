@@ -58,9 +58,9 @@ export default function Home() {
           </p>
         </section>
         <section className="p-4 mb-16 lg:pt-8 bg-o-background lg:border-2 rounded-xl border-section-outline shadow-xl" id="experience">
-          <h2 className="text-3xl mb-8">Experience</h2>
+          <h2 className="text-3xl">Experience</h2>
           <ul className="mb-6 divide-y divide-slate-400">
-            <li className="group mb-8 relative w-full p-12 grid sm:grid-cols-8 cursor-pointer">
+            {/* <li className="group mb-8 relative w-full p-12 grid sm:grid-cols-8 cursor-pointer">
               <div className="absolute -inset-x-2 -inset-y-2 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-2 lg:block lg:group-hover:bg-experience-background lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
               <p className="z-10 text-md font-extralight antialiased tracking-wide sm:col-span-2">
                 May 2023 - Aug 2023
@@ -109,7 +109,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> */}
             <ExperienceCard
               startDate="May 2023"
               endDate="Aug 2023"
@@ -118,7 +118,29 @@ export default function Home() {
               description="Full stack web developer for BlackBerry. Authored pages and developed components and their associated server-side functionality in accordance with stakeholder requests on Jira. specifications. Refactored existing code to significantly reduce technical debt and improve site efficiency. Participated in daily scrum calls, presented original ideas and showcased work."
               skills={["TypeScript", "Java", "SCSS", "XML", "Sightly/HTL", "AEM", "Git", "Gitlab", "Agile", "Jira", "Confluence"]}
             />
-            <li className="group mb-8 relative w-full p-12 grid sm:grid-cols-8 cursor-pointer">
+            <ExperienceCard
+              startDate="Dec 2022"
+              endDate="May 2023"
+              title="Fullstack Engineer - Evoke"
+              url="https://evoke-app.com"
+              description="Led development of interactive React web
+              application. Designed and developed REST API with Node.js and Express to handle payment processing with Stripe’s API, validate user requests with
+              Firebase JWT’s and authenticate and charge clients for requests to AI models hosted on AWS EKS
+              cluster. Implemented a Firebase NoSQL Realtime Database with security rules for storing
+              essential user information, including cryptographically secure authentication tokens generated
+              by the REST API. Configured GitHub Actions to establish CI/CD pipeline for building and
+              deploying the web app and Node.js server. Performed unit testing with Postman, used cloud
+              services such as Google Cloud/Firebase, DigitalOcean."
+              skills={["React", "Node.js", "Express.js", "TypeScript", "DevOps", "AWS", "GCP", "Firebase"]}
+            />
+            <ExperienceCard
+              startDate="May 2020"
+              endDate="Aug 2021"
+              title="Fullstack Developer - Freelance"
+              description="Full stack web development for local tutoring business. Created interactive web applications in accordance with client specifications. Programmed and utilized an interactive online whiteboard to improve the quality of math instruction and increase size of clientele by 18%."
+              skills={["JavaScripts", "JQuery", "SQL", "PHP", "HTML", "CSS", "Bootstrap"]}
+            />
+            {/* <li className="group mb-8 relative w-full p-12 grid sm:grid-cols-8 cursor-pointer">
               <div className="absolute -inset-x-2 -inset-y-2 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-2 lg:block lg:group-hover:bg-experience-background lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
               <p className="z-10 text-md font-extralight antialiased tracking-wide sm:col-span-2">
                 Dec 2022 - May 2023
@@ -204,11 +226,11 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-            </li>
+            </li> */}
           </ul>
         </section>
         <section className="p-4 pb-0 mb-8 lg:pt-8 bg-o-background lg:border-2 rounded-xl border-section-outline shadow-xl" id="projects">
-          <h2 className="text-3xl mb-8">Projects</h2>
+          <h2 className="text-3xl">Projects</h2>
           <ul className="mb-6 divide-y divide-slate-400">
             <ExperienceCard
               startDate="Nov 2021"
