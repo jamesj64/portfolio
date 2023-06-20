@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --experience-background: #4d5456;
+  --experience-background: #4d5456b9;
   --link-highlighted: #55d4ff;
   --skill-color: #92aaa5;
   --skill-color-text: #f8f6f7;
+  --section-outline: #4d54561e;
 }
 
 /* :root {
@@ -35,5 +36,14 @@ body {
 
 body {
   color:white;
+  background: rgb(38, 46, 49);
+  /* background-image: 
+    radial-gradient(
+      farthest-corner circle at 49% 48%, 
+      #5b5b5b46 0%, #4553580c 99% 99%
+    ); */
+}
+
+canvas {
   background: rgb(38, 46, 49);
 }
