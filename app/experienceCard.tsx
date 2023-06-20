@@ -15,9 +15,9 @@ export default function ExperienceCard(props: Experience) {
       <p className="z-10 text-md font-extralight antialiased tracking-wide sm:col-span-2">
         {`${props.startDate} - ${props.endDate}`}
       </p>
-      <div className="sm:col-span-6 z-10 text-left sm:pl-8 md:pl-4 md:pr-12">
+      <div className="sm:col-span-6 z-10 text-left md:pl-4 md:pr-12">
         <div className="mb-4">
-          <a className="leading-tight z-10 text-xl font-medium tracking-wide group-hover:text-link-highlighted">{props.title}</a>
+          <h2 className="leading-tight z-10 text-xl font-medium tracking-wide group-hover:text-link-highlighted">{props.title}</h2>
         </div>
         <h3 className="text-md font-light tracking-wide">{props.description}</h3>
         <ul className="flex flex-wrap text-skill-color-text font-normal tracking-wider text-md leading-snug">
