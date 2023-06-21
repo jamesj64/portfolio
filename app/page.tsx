@@ -22,13 +22,13 @@ export default function Home() {
             </a>
           </li>
           <li className="w-12 h-12" aria-label="Github link">
-            <a className="block" href="https://linkedin.com" target="_blank">
+            <a className="block" href="https://github.com/jamesj64/" target="_blank">
               <Image className="bg-o-background transition ease-in-out duration-150 hover:scale-125" src="/github.svg" width={32} height={32} alt="GitHub" />
             </a>
           </li>
-          <li className="w-12 h-12" aria-label="Email link">
+          <li className="w-12 h-12" aria-label="CV link">
             <a className="block" href="https://linkedin.com" target="_blank">
-              <Image className="bg-o-background transition ease-in-out duration-150 hover:scale-125" src="/email.svg" width={32} height={32} alt="Email" />
+              <Image className="bg-o-background transition ease-in-out duration-150 hover:scale-125" src="/cv.svg" width={32} height={32} alt="CV" />
             </a>
           </li>
         </ul>
@@ -43,10 +43,10 @@ export default function Home() {
           </p>
           <p className="text-xl font-thin leading-tight antialiased tracking-wider mb-4">
             Thus far, I&#39;ve been a fullstack engineer and co-founder
-            of <a className="font-normal hover:text-link-highlighted" href="https://evoke-app.com">Evoke</a>, a freelance web developer for a local tutoring business, a web developer at <a href="#" className="font-normal hover:text-link-highlighted">BlackBerry</a>.
+            of <a className="font-normal hover:text-link-highlighted" href="https://evoke-app.com">Evoke</a>, a freelance web developer for a local tutoring business, a web developer at <a href="https://blackberry.com/" className="font-normal hover:text-link-highlighted">BlackBerry</a>.
             In addition to my work experience, I&#39;ve worked on several projects about stuff I&#39;m passionate about, such as
-            an <a href="#" className="font-normal hover:text-link-highlighted">Automated Theorem Prover</a>, several games in the Unity Game Engine (here&#39;s my favorite: <a href="#" className="font-normal hover:text-link-highlighted">title</a>),
-            and a <a href="#" className="font-normal hover:text-link-highlighted">remote control goose powered by a Raspberry Pi.</a>
+            an <a href="https://github.com/jamesj64/Automated-Theorem-Prover" className="font-normal hover:text-link-highlighted">Automated Theorem Prover</a>, several games in the Unity Game Engine (here&#39;s my favorite: <a href="#" className="font-normal hover:text-link-highlighted">title</a>),
+            and a <a href="https://github.com/jamesj64/goose2" className="font-normal hover:text-link-highlighted">remote control goose powered by a Raspberry Pi.</a>
           </p>
           <p className="text-xl font-thin leading-tight antialiased tracking-wider">
             When I&#39;m not programming, you might find me reading about the philosophy of language or philosophical logic,
@@ -230,10 +230,17 @@ export default function Home() {
           <h2 className="text-3xl">Projects</h2>
           <ul className="mb-6 divide-y divide-slate-400">
             <ExperienceCard
+              startDate="May 2023"
+              endDate="Present"
+              title="Hack & Slash"
+              skills={[ "C#", "OOP", "Unity Game Engine" ]}
+              description="Developed hack and slash game for WebGL and Desktop platforms in the Unity Game Engine."
+            />
+            <ExperienceCard
               startDate="Nov 2021"
               endDate="Present"
               title="Automated Theorem Prover"
-              url="https://google.ca"
+              url="https://github.com/jamesj64/Automated-Theorem-Prover"
               skills={["F#", ".NET", "Functional Programming"]}
               description="Functionally programmed automated theorem prover in F#. Parses well-formed formulas and generates natural deduction proofs for valid inferences within sentential logic. Finite counter-model finder for invalid inferences."
             />
@@ -241,6 +248,7 @@ export default function Home() {
               startDate="Sep 2022"
               endDate="Dec 2022"
               title="Robot Goose"
+              url="https://github.com/jamesj64/goose2"
               skills={["Python", "Flask", "Git", "JQuery", "AJAX"]}
               description="Developed Flask server in Python to enable remote control of goose robot over local area network. Implemented object detection, developed client to communicate with Flask server in JS with jQuery and Bootstrap."
             />
