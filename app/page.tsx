@@ -11,9 +11,9 @@ export default function Home() {
       {/* <nav className="lg:hidden absolute top-0 w-full bg-slate-700 h-12">
 
       </nav> */}
-      <div className="lg:w-2/5 lg:top-0 lg:sticky lg:max-h-screen lg:p-24 md:p-16 p-10">
+      <div className="lg:w-2/5 lg:top-0 lg:sticky lg:max-h-screen lg:p-24 p-4">
         <div className="bg-o-background w-fit">
-          <h1 className="text-6xl md:mb-2 font-medium max-sm:tracking-tight max-sm:text-4xl">James Jordan</h1>
+          <h1 className="text-6xl md:mb-2 font-medium max-sm:tracking-tight max-sm:text-6xl">James Jordan</h1>
           <h2 className="text-2xl mb-10 max-sm:mb-4 font-light">Web Developer at BlackBerry</h2>
           <p className="text-lg leading-tight antialiased tracking-wider mb-12 font-extralight">Software Engineer seeking Winter 2023 internships.</p>
         </div>
@@ -37,7 +37,7 @@ export default function Home() {
         </ul>
       </div>
       <div className="lg:w-3/5 p-16 pl-2 pr-2 pt-0 lg:pl-16 lg:pr-16 lg:pt-12">
-        <section className="lg:mt-4 lg:p-8 p-0 pt-0 mt-0 relative mb-16 bg-o-background lg:border-2 rounded-xl border-section-outline shadow-xl" id="about">
+        <section className="lg:mt-4 lg:p-8 pl-2 pr-2 pt-0 mt-0 relative mb-16 bg-o-background lg:border-2 rounded-xl border-section-outline shadow-xl" id="about">
           <h2 className="text-3xl mb-4">About</h2>
           <p className="text-xl font-thin leading-tight antialiased tracking-wider mb-4">
             Ever since learning about MIT&#39;s Scratch in my elementary school&#39;s computer lab, I&#39;ve been tinkering
@@ -57,7 +57,7 @@ export default function Home() {
             I&#39;ve been spending the most time with recently have been Factorio, Elden Ring, and both the old and new Battlefront 2 (the Star Wars ones).
           </p>
         </section>
-        <section className="p-4 mb-16 lg:pt-8 bg-o-background lg:border-2 rounded-xl border-section-outline shadow-xl" id="experience">
+        <section className="p-4 pb-0 mb-16 lg:pt-8 bg-o-background lg:border-2 rounded-xl border-section-outline shadow-xl" id="experience">
           <h2 className="text-3xl">Experience</h2>
           <ul className="mb-6 divide-y divide-slate-400">
             {/* <li className="group mb-8 relative w-full p-12 grid sm:grid-cols-8 cursor-pointer">
