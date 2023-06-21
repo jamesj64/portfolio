@@ -14,12 +14,6 @@ module.exports = {
         "skill-color-text": "var(--skill-color-text)",
         "o-background": "rgba(38, 46, 49, 0.85)",
         "section-outline": "var(--section-outline)",
-      },
-      screens: {
-        '2xs': '360px',
-        'iPhone12': '390px',
-        '1.5xs': '414px',
-        'xs': '480px',
       }
     },
   },

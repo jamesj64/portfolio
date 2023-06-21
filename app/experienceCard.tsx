@@ -20,7 +20,7 @@ export default function ExperienceCard(props: Experience) {
           <h2 className="leading-tight z-10 text-xl font-medium tracking-wide group-hover:text-link-highlighted">{props.title}</h2>
         </div>
         <h3 className="text-md font-light tracking-wide">{props.description}</h3>
-        <ul className="flex flex-wrap text-skill-color-text font-medium tracking-wider text-md leading-snug">
+        <ul className="flex flex-wrap text-skill-color-text font-medium tracking-wider text-sm leading-snug">
           {props.skills.map(skill => (
             <li className="mr-2 mt-2" key={skill}>
               <div className="flex items-center rounded-full bg-skill-color px-3 py-1.5">{skill}</div>
