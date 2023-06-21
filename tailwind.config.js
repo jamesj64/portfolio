@@ -14,7 +14,10 @@ module.exports = {
         "skill-color-text": "var(--skill-color-text)",
         "o-background": "rgba(38, 46, 49, 0.85)",
         "section-outline": "var(--section-outline)",
-      }
+      },
+      borderWidth: {
+        "2.5": "2.5px",
+      },
     },
   },
   plugins: [],

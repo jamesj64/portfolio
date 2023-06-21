@@ -10,6 +10,7 @@ const aboutCutoff: number = -500;
 const experienceCutoff: number = -1600;
 
 export default function ScrollNav() {
+  const [isMobile, setMobile] = useState(true);
   const [inScrollAnim, setInScrollAnim] = useState(false);
   const [currState, setCurrState] = useState(-1);
 
@@ -74,7 +75,7 @@ export default function ScrollNav() {
   });
 
   const animNow = (yPos: number) => {
-    if (inScrollAnim) return;
+    if (inScrollAnim || isMobile) return;
     if (yPos < aboutCutoff && yPos < experienceCutoff) {
       switch (currState) {
         case 2:
@@ -126,32 +127,35 @@ export default function ScrollNav() {
     }
   };
 
-  useScrollPosition(({ prevPos, currPos }) => animNow(currPos.y));
+  useScrollPosition(({ prevPos, currPos }) => animNow(currPos.y), undefined, undefined, undefined, isMobile ? 1000000 : 250);
 
   useEffect(() => {
+    setMobile(window.innerWidth < 1024)
+    window.addEventListener("resize", () => setMobile(window.innerWidth < 1024))
     animNow(-scrollY);
   });
 
   return (
-    <ul className="max-lg:hidden text-xl bg-o-background w-fit">
-      <li className="mb-2 about">
-        <div onClick={() => scrollTo("about")} className="flex items-center gap-2 transition ease-in-out duration-150 hover:scale-110 hover:translate-x-4 hover:text-link-highlighted hover:cursor-pointer">
-          <p>About</p>
-          <div className="w-3 h-3 bg-gray-50 square0"></div>
-        </div>
-      </li>
-      <li className="mb-2 experience">
-        <div onClick={() => scrollTo("experience")} className="flex items-center gap-2 transition ease-in-out duration-150 hover:scale-110 hover:translate-x-4 hover:text-link-highlighted hover:cursor-pointer">
-          <p>Experience</p>
-          <div className="w-3 h-3 bg-gray-50 square1"></div>
-        </div>
-      </li>
-      <li className="mb-2 projects">
-        <div onClick={() => scrollTo("projects")} className="flex items-center gap-2 transition ease-in-out duration-150 hover:scale-110 hover:translate-x-4 hover:text-link-highlighted hover:cursor-pointer">
-          <p>Projects</p>
-          <div className="w-3 h-3 bg-gray-50 square2"></div>
-        </div>
-      </li>
-    </ul>
+    isMobile ? <></> :
+      <ul className="text-xl bg-o-background w-fit">
+        <li className="mb-2 about">
+          <div onClick={() => scrollTo("about")} className="flex items-center gap-2 transition ease-in-out duration-150 hover:scale-110 hover:translate-x-4 hover:text-link-highlighted hover:cursor-pointer">
+            <p>About</p>
+            <div className="w-3 h-3 bg-gray-50 square0"></div>
+          </div>
+        </li>
+        <li className="mb-2 experience">
+          <div onClick={() => scrollTo("experience")} className="flex items-center gap-2 transition ease-in-out duration-150 hover:scale-110 hover:translate-x-4 hover:text-link-highlighted hover:cursor-pointer">
+            <p>Experience</p>
+            <div className="w-3 h-3 bg-gray-50 square1"></div>
+          </div>
+        </li>
+        <li className="mb-2 projects">
+          <div onClick={() => scrollTo("projects")} className="flex items-center gap-2 transition ease-in-out duration-150 hover:scale-110 hover:translate-x-4 hover:text-link-highlighted hover:cursor-pointer">
+            <p>Projects</p>
+            <div className="w-3 h-3 bg-gray-50 square2"></div>
+          </div>
+        </li>
+      </ul>
   );
 };
