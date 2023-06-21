@@ -8,9 +8,6 @@ import ExperienceCard from "./experienceCard";
 export default function Home() {
   return (
     <main className="lg:flex min-h-screen justify-between">
-      {/* <nav className="lg:hidden absolute top-0 w-full bg-slate-700 h-12">
-
-      </nav> */}
       <div className="lg:w-2/5 lg:top-0 lg:sticky lg:max-h-screen lg:p-24 p-4">
         <div className="bg-o-background w-fit">
           <h1 className="text-6xl md:mb-2 font-medium max-sm:tracking-tight max-sm:text-6xl">James Jordan</h1>
@@ -46,10 +43,10 @@ export default function Home() {
           </p>
           <p className="text-xl font-thin leading-tight antialiased tracking-wider mb-4">
             Thus far, I&#39;ve been a fullstack engineer and co-founder
-            of <a className="font-normal hover:text-link-highlighted" href="https://evoke-app.com">Evoke</a>, a freelance web developer for a local tutoring business, a web developer at <a className="font-normal hover:text-link-highlighted">BlackBerry</a>.
+            of <a className="font-normal hover:text-link-highlighted" href="https://evoke-app.com">Evoke</a>, a freelance web developer for a local tutoring business, a web developer at <a href="#" className="font-normal hover:text-link-highlighted">BlackBerry</a>.
             In addition to my work experience, I&#39;ve worked on several projects about stuff I&#39;m passionate about, such as
-            an <a className="font-normal hover:text-link-highlighted">Automated Theorem Prover</a>, several games in the Unity Game Engine (here&#39;s my favorite: <a className="font-normal hover:text-link-highlighted">title</a>),
-            and a <a className="font-normal hover:text-link-highlighted">remote control goose powered by a Raspberry Pi.</a>
+            an <a href="#" className="font-normal hover:text-link-highlighted">Automated Theorem Prover</a>, several games in the Unity Game Engine (here&#39;s my favorite: <a href="#" className="font-normal hover:text-link-highlighted">title</a>),
+            and a <a href="#" className="font-normal hover:text-link-highlighted">remote control goose powered by a Raspberry Pi.</a>
           </p>
           <p className="text-xl font-thin leading-tight antialiased tracking-wider">
             When I&#39;m not programming, you might find me reading about the philosophy of language or philosophical logic,

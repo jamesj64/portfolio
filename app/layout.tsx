@@ -15,6 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="robots" content="all" />
+      </head>
       <body className={leagueSpartan.className}>{children}</body>
     </html>
   )
