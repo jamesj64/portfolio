@@ -10,13 +10,14 @@ export default function Page() {
   useEffect(() => router.push("/"));
 
   return (
-    <main className="text-center p-32">
-      <h1 className="text-4xl">
-        404 - Page not Found
-      </h1>
-      <h2 className="text-xl mt-8">
-        Taking you back home...
-      </h2>
-    </main>
+    // <main className="text-center p-32">
+    //   <h1 className="text-4xl">
+    //     404 - Page not Found
+    //   </h1>
+    //   <h2 className="text-xl mt-8">
+    //     Taking you back home...
+    //   </h2>
+    // </main>
+    <></>
   );
 }
