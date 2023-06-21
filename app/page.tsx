@@ -29,8 +29,8 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <div className="lg:w-3/5 p-16 pl-2 pr-2 pt-0 lg:pl-16 lg:pr-16 lg:pt-12">
-        <section className="lg:mt-4 lg:p-8 pl-2 pr-2 pt-0 mt-0 relative mb-16 max-lg:pb-4 bg-o-background lg:border-2.5 rounded-xl border-section-outline shadow-xl" id="about">
+      <div className="lg:w-3/5 p-16 pl-2 pr-2 pt-0 lg:pl-16 lg:pr-16 lg:pt-12" id="about">
+        <section className="lg:mt-4 lg:p-8 pl-2 pr-2 pt-0 mt-0 relative mb-16 max-lg:pb-4 bg-o-background lg:border-2.5 rounded-xl border-section-outline shadow-xl">
           <h2 className="text-3xl mb-4">About</h2>
           <p className="text-xl font-thin leading-tight antialiased tracking-wider mb-4">
             Ever since learning about MIT&#39;s Scratch in my elementary school&#39;s computer lab, I&#39;ve been tinkering
