@@ -92,6 +92,8 @@ export default function Home() {
               startDate="May 2023"
               endDate="Present"
               title="Hack & Slash"
+              url="/demos/hack-slash"
+              internalLink={true}
               skills={[ "C#", "OOP", "Unity Game Engine" ]}
               description="Developed hack and slash game for WebGL and Desktop platforms in the Unity Game Engine."
             />
