@@ -53,6 +53,7 @@ export default function Home() {
             When I&#39;m not programming, you might find me reading about the philosophy of language or philosophical logic,
             going on long walks, or doing stuff with my two dogs. I also enjoy playing video games on occasion. Some of the games
             I&#39;ve been spending the most time with recently have been Factorio, Elden Ring, and both the old and new Battlefront 2 (the Star Wars ones).
+            <Image src="/images/ct.webp" className="inline-block ml-1 transition ease-in-out duration-150 hover:scale-110" alt="Clone Trooper" width={36} height={36}/>
           </p>
         </section>
         <section className="p-4 pb-0 mb-16 lg:pt-8 bg-o-background lg:border-2.5 rounded-xl border-section-outline shadow-xl" id="experience">
