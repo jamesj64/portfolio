@@ -9,7 +9,7 @@ export default function Home() {
       <div className="lg:w-2/5 lg:top-0 lg:sticky lg:max-h-screen lg:p-24 p-4">
         <h1 className="bg-o-background w-fit text-6xl md:mb-2 font-medium max-sm:tracking-tight max-sm:text-6xl">James Jordan</h1>
         <h2 className="bg-o-background w-fit text-2xl mb-10 max-sm:mb-4 font-light">Web Developer at BlackBerry</h2>
-        <p className="bg-o-background w-fit text-lg leading-tight antialiased tracking-wider mb-12 font-extralight">Software Engineer seeking Winter 2024 internships.</p>
+        <p className="bg-o-background w-fit text-lg leading-tight antialiased tracking-wider mb-12 font-extralight">Software Engineer seeking Winter 2024 internships</p>
         <ScrollNav />
         <ul className="max-w-xs mt-12 flex gap-x-2 md:gap-x-4 lg:gap-x-10" aria-label="Social Links">
           <li className="w-12 h-12" aria-label="Linkedin link">
@@ -37,23 +37,23 @@ export default function Home() {
       <div className="lg:w-3/5 p-16 pl-2 pr-2 pt-0 lg:pl-16 lg:pr-16 lg:pt-12" id="about">
         <section className="lg:mt-4 lg:p-8 pl-2 pr-2 pt-0 mt-0 relative mb-16 max-lg:pb-4 bg-o-background lg:border-2.5 rounded-xl border-section-outline shadow-xl">
           <h2 className="text-3xl mb-4">About</h2>
-          <p className="text-xl font-thin leading-tight antialiased tracking-wider mb-4">
+          <p className="text-xl font-thin leading-snug antialiased tracking-wider mb-4">
             Ever since learning MIT&#39;s Scratch programming language in my elementary school&#39;s computer lab, I&#39;ve been experimenting
             with new technologies to build cool projects I&#39;m excited about. I&#39;m currently studying
             Computer Science at the University of Waterloo.
           </p>
-          <p className="text-xl font-thin leading-tight antialiased tracking-wider mb-4">
-            Thus far, I&#39;ve been a fullstack engineer and co-founder
+          <p className="text-xl font-thin leading-snug antialiased tracking-wider mb-4">
+            So far, I&#39;ve been a fullstack engineer and co-founder
             of <a className="font-normal hover:text-link-highlighted" href="https://evoke-app.com" target="_blank">Evoke</a>, a freelance web developer for a local tutoring business, and a web developer at <a href="https://blackberry.com/" className="font-normal hover:text-link-highlighted" target="_blank">BlackBerry</a>.
             In addition to my work experience, I&#39;ve worked on several projects about stuff I&#39;m passionate about, such as
             an <a href="https://github.com/jamesj64/Automated-Theorem-Prover" className="font-normal hover:text-link-highlighted" target="_blank">Automated Theorem Prover</a>, several games in the Unity Game Engine (<a href="https://jamesj63.itch.io/coldblooded" className="font-normal hover:text-link-highlighted" target="_blank">Coldblooded</a> is my favorite),
             and a <a href="https://github.com/jamesj64/goose2" className="font-normal hover:text-link-highlighted" target="_blank">remote control goose powered by a Raspberry Pi.</a>
           </p>
-          <p className="text-xl font-thin leading-tight antialiased tracking-wider">
+          <p className="text-xl font-thin leading-normal antialiased tracking-wider">
             When I&#39;m not programming, you might find me reading about the philosophy of language or philosophical logic,
             going on long walks, or doing stuff with my two dogs. I also enjoy playing video games on occasion. Some of the games
             I&#39;ve been spending the most time with recently have been Factorio, Elden Ring, and both the old and new Battlefront 2 (the Star Wars ones).
-            <Image src="/images/ct.webp" className="inline-block ml-1 transition ease-in-out duration-150 hover:scale-110" alt="Clone Trooper" width={36} height={36}/>
+            <Image src="/images/ct.webp" className="inline-block ml-1 transition ease-in-out duration-150 hover:scale-105" alt="Clone Trooper" width={32} height={32}/>
           </p>
         </section>
         <section className="p-4 pb-0 mb-16 lg:pt-8 bg-o-background lg:border-2.5 rounded-xl border-section-outline shadow-xl" id="experience">
@@ -64,6 +64,7 @@ export default function Home() {
               endDate="Aug 2023"
               title="Web Developer - BlackBerry"
               url="https://blackberry.com"
+              relativeImagePath="/images/bb.jpg"
               description="Full stack web developer for BlackBerry. Authored pages and developed components and their associated server-side functionality in accordance with stakeholder requests on Jira. Refactored existing code to significantly reduce technical debt and improve site efficiency. Participated in daily scrum calls, presented original ideas and showcased work."
               skills={["TypeScript", "Java", "SCSS", "XML", "Sightly/HTL", "AEM", "Git", "Gitlab", "Agile", "Jira", "Confluence"]}
             />
@@ -97,7 +98,8 @@ export default function Home() {
               startDate="May 2023"
               endDate="Present"
               title="Hack & Slash"
-              skills={[ "C#", "OOP", "Unity Game Engine" ]}
+              relativeImagePath="/images/controller.svg"
+              skills={["C#", "OOP", "Unity Game Engine"]}
               description="Developing hack and slash game for WebGL and Desktop platforms in the Unity Game Engine. More to come soon..."
             />
             <ExperienceCard
