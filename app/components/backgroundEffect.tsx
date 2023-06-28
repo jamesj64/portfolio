@@ -33,8 +33,8 @@ export default function BackgroundEffect() {
         },
         modes: {
           repulse: {
-            distance: 50,
-            duration: 0.4,
+            distance: 75,
+            duration: 0.6,
           },
         },
       },
