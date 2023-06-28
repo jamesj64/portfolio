@@ -2,6 +2,8 @@ import Image from "next/image";
 import ScrollNav from "./components/scrollNav";
 import BackgroundEffect from "./components/backgroundEffect";
 import ExperienceCard from "./components/experienceCard";
+import Link from "next/link";
+import Advert from "./components/advert";
 
 export default function Home() {
   return (
@@ -87,7 +89,7 @@ export default function Home() {
         </section>
         <section className="p-4 pb-0 mb-8 lg:pt-8 bg-o-background lg:border-2.5 rounded-xl border-section-outline shadow-xl" id="projects">
           <h2 className="text-3xl">Projects</h2>
-          <ul className="mb-6 divide-y divide-slate-400">
+          <ul className="mb-2 divide-y divide-slate-400">
             <ExperienceCard
               startDate="May 2023"
               endDate="Present"
@@ -114,6 +116,12 @@ export default function Home() {
               description="Developed Flask server in Python to enable remote control of goose robot over local area network. Implemented object detection, developed client to communicate with Flask server in JS with jQuery and Bootstrap."
             />
           </ul>
+          <h3 className="text-xl text-center mb-8">
+            {/* Check out demos of these projects and more <Link href="/demos" className="text-link-highlighted hover:underline">here</Link>
+            <br/> */}
+            {/* <Link href="/demos" className="text-3xl font-regular">Demos <b>&rarr;</b></Link> */}
+            <Advert url="/demos" text="Demos"/>
+          </h3>
         </section>
       </div>
       <BackgroundEffect />
