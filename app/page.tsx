@@ -2,7 +2,6 @@ import Image from "next/image";
 import ScrollNav from "./components/scrollNav";
 import BackgroundEffect from "./components/backgroundEffect";
 import ExperienceCard from "./components/experienceCard";
-import Link from "next/link";
 import Advert from "./components/advert";
 
 export default function Home() {
