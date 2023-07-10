@@ -6,7 +6,7 @@ import ExperienceCard from "./components/experienceCard";
 export default function Home() {
   return (
     <main className="lg:flex min-h-screen justify-between">
-      <div className="lg:w-2/5 lg:top-0 lg:sticky lg:max-h-screen lg:p-24 p-4">
+      <div className="lg:w-2/5 lg:top-0 lg:sticky lg:max-h-screen lg:p-24 p-4 2xl:pl-28">
         <h1 className="bg-o-background w-fit text-6xl md:mb-2 font-medium max-sm:tracking-tight max-sm:text-6xl">James Jordan</h1>
         <h2 className="bg-o-background w-fit text-2xl mb-10 max-sm:mb-4 font-light">Web Developer at BlackBerry</h2>
         <p className="bg-o-background w-fit text-lg leading-tight antialiased tracking-wider mb-12 font-extralight">Software Engineer seeking Winter 2024 internships</p>
