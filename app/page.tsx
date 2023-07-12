@@ -102,7 +102,7 @@ export default function Home() {
               url="/demos/hack-slash"
               internalLink={true}
               skills={[ "C#", "OOP", "Unity Game Engine" ]}
-              description="Developed hack and slash game for WebGL and Desktop platforms in the Unity Game Engine."
+              description="Developed hack and slash game for WebGL and Desktop platforms in the Unity Game Engine. Work in progress."
               relativeImagePath="/images/controller.svg"
             />
             <ExperienceCard
@@ -123,9 +123,6 @@ export default function Home() {
             />
           </ul>
           <h3 className="text-xl text-center mb-8">
-            {/* Check out demos of these projects and more <Link href="/demos" className="text-link-highlighted hover:underline">here</Link>
-            <br/> */}
-            {/* <Link href="/demos" className="text-3xl font-regular">Demos <b>&rarr;</b></Link> */}
             <Advert url="/demos" text="Demos"/>
           </h3>
         </section>
