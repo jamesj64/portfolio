@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import anime from "animejs";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
@@ -74,7 +74,7 @@ export default function ScrollNav() {
     fontSize: '1.25rem',
   });
 
-  const animNow = (yPos: number) => {
+  const animNow = useCallback((yPos: number) => {
     if (inScrollAnim || isMobile) return;
     if (yPos < aboutCutoff && yPos < experienceCutoff) {
       switch (currState) {
@@ -125,15 +125,69 @@ export default function ScrollNav() {
       rotIn('.square0');
       setCurrState(0);
     }
-  };
+  }, [currState, inScrollAnim, isMobile]);
+
+  // const animNow = (yPos: number) => {
+  //   if (inScrollAnim || isMobile) return;
+  //   if (yPos < aboutCutoff && yPos < experienceCutoff) {
+  //     switch (currState) {
+  //       case 2:
+  //         return;
+  //       case 0:
+  //         animOut('.about');
+  //         rotOut('.square0');
+  //         break;
+  //       case 1:
+  //         animOut('.experience');
+  //         rotOut('.square1');
+  //         break;
+  //     }
+  //     animIn('.projects');
+  //     rotIn('.square2');
+  //     setCurrState(2);
+  //   } else if (yPos < aboutCutoff) {
+  //     switch (currState) {
+  //       case 1:
+  //         return;
+  //       case 0:
+  //         animOut('.about');
+  //         rotOut('.square0');
+  //         break;
+  //       case 2:
+  //         animOut('.projects');
+  //         rotOut('.square2');
+  //         break;
+  //     }
+  //     animIn('.experience');
+  //     rotIn('.square1');
+  //     setCurrState(1);
+  //   } else {
+  //     switch (currState) {
+  //       case 0:
+  //         return;
+  //       case 1:
+  //         animOut('.experience');
+  //         rotOut('.square1');
+  //         break;
+  //       case 2:
+  //         animOut('.projects');
+  //         rotOut('.square2');
+  //         break;
+  //     }
+  //     animIn('.about');
+  //     rotIn('.square0');
+  //     setCurrState(0);
+  //   }
+  // };
 
   useScrollPosition(({ prevPos, currPos }) => animNow(currPos.y), undefined, undefined, undefined, isMobile ? 1000000 : 250);
 
+  //If errors, remove dep list for this
   useEffect(() => {
     setMobile(window.innerWidth < 1024)
     window.addEventListener("resize", () => setMobile(window.innerWidth < 1024))
     animNow(-scrollY);
-  });
+  }, [animNow]);
 
   return (
     isMobile ? <></> :

@@ -33,8 +33,8 @@ export default function BackgroundEffect() {
         },
         modes: {
           repulse: {
-            distance: 50,
-            duration: 0.4,
+            distance: 75,
+            duration: 0.6,
           },
         },
       },
@@ -59,13 +59,13 @@ export default function BackgroundEffect() {
             default: "bounce",
           },
           random: false,
-          speed: 1,
+          speed: 0.8,
           straight: false,
         },
         number: {
           density: {
             enable: true,
-            area: 400,
+            area: 500,
           },
           value: 40,
         },
