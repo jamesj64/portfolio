@@ -8,12 +8,12 @@ export default function Page() {
       <ul className="mt-16 md:flex gap-y-8 w-full h-full flex-wrap justify-center gap-x-12">
         <DemoCard
           title="Hack & Slash"
-          description="Hack and slash game for WebGL and Desktop platforms in the Unity Game Engine."
+          description="Hack and slash game for WebGL and Desktop platforms in the Unity Game Engine. AI pathfinding with Unity Navmesh."
           url="/demos/hack-slash"
           internalLink={true}
-          previewImg="/images/linkedin.svg"
+          previewImg="/demos/hack-slash/images/logo.svg"
         />
-        <DemoCard
+        {/* <DemoCard
           title="Physics Simulation"
           description="JS Bouncing ball physics simulation. Made with P5.js"
           url="/demos/hack-slash"
@@ -26,7 +26,7 @@ export default function Page() {
           url="/demos/hack-slash"
           internalLink={true}
           previewImg="/images/github.svg"
-        />
+        /> */}
         <DemoCard
           title="Coldblooded"
           description="Break into the capitol and take a picture of the president in its reptile form. Game for a game jam made in Unity Game Engine."
@@ -34,16 +34,10 @@ export default function Page() {
           internalLink={false}
           previewImg="/demos/coldblooded/images/coldblooded.svg"
         />
-        <DemoCard
-          title="Demo"
-          description="description description description description description description description description description"
-          url="/demos/hack-slash"
-          internalLink={true}
-          previewImg="/images/github.svg"
-        />
       </ul>
+      <h2 className="text-2xl mt-24">More to come soon...</h2>
       {/* Uncomment below for merge */}
-      {/* <BackgroundEffect/> */}
+      <BackgroundEffect/>
     </main>
   );
 };
