@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image"
 
 interface Experience {
@@ -6,6 +7,7 @@ interface Experience {
   title: string,
   description: string,
   url?: string,
+  internalLink?: boolean,
   relativeImagePath?: string,
   skills: string[],
 }
@@ -13,7 +15,11 @@ interface Experience {
 export default function ExperienceCard(props: Experience) {
   return (
     <li className="group relative w-full p-12 grid md:grid-cols-8 lg:pl-6 xl:pl-10 max-sm:pr-0 pl-0 pr-0 xl:pr-12">
-      {props.url && <a href={props.url} aria-label={props.title} target="_blank" className="w-full h-full absolute top-0 left-0 z-20"/>}
+      {props.url && (
+        props.internalLink ?
+          <Link href={props.url} aria-label={props.title} className="w-full h-full absolute top-0 left-0 z-20" />
+          : <a href={props.url} aria-label={props.title} target="_blank" className="w-full h-full absolute top-0 left-0 z-20" />
+      )}
       <div className="absolute -inset-x-2 inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-2 lg:block lg:group-hover:bg-experience-background lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
       <p className="z-10 text-md font-extralight antialiased tracking-wide sm:col-span-2">
         {`${props.startDate} - ${props.endDate}`}
