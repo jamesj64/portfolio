@@ -137,7 +137,7 @@ export default function ScrollNav() {
   }, [animNow]);
 
   return (
-    isMobile ? <></> :
+    !isMobile &&
       <ul className="text-xl bg-o-background w-fit">
         <li className="mb-2 about">
           <div onClick={() => scrollTo("about")} className="flex items-center gap-2 transition ease-in-out duration-150 hover:scale-110 hover:translate-x-4 hover:text-link-highlighted hover:cursor-pointer">
