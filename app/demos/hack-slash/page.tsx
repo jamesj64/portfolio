@@ -3,6 +3,8 @@
 import React, { useRef } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
+import DesktopOnly from "../components/desktopOnly";
+
 export default function Page() {
   const { unityProvider, isLoaded, loadingProgression } = useUnityContext({
     loaderUrl: "hack-slash/build/Web.loader.js",
@@ -19,6 +21,7 @@ export default function Page() {
     <main className="flex min-h-screen justify-center overflow-hidden">
       <div className="w-11/12 max-h-screen p-24 text-center pt-4">
         <p className="text-4xl pb-4">{isLoaded ? "Hack & Slash" : `Loading... (${loadingPercentage}%)`}</p>
+        <DesktopOnly/>
         <div onClick={() => { if (game.current && isLoaded) game.current.requestFullscreen(); }}>
           <Unity className="w-full h-full" unityProvider={unityProvider} ref={game}/>
         </div>
