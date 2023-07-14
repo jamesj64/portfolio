@@ -22,10 +22,11 @@ export default function Page() {
       <div className="w-11/12 max-h-screen p-24 text-center pt-4">
         <p className="text-4xl pb-4">{isLoaded ? "Hack & Slash" : `Loading... (${loadingPercentage}%)`}</p>
         <DesktopOnly/>
+        <Unity className="w-full h-full" unityProvider={unityProvider} ref={game}/>
         <div onClick={() => { if (game.current && isLoaded) game.current.requestFullscreen(); }}>
-          <Unity className="w-full h-full" unityProvider={unityProvider} ref={game}/>
+          <p className="text-right text-4xl hover:cursor-pointer pt-2 text-red-600">Full Screen</p>
         </div>
       </div>
-    </main>
+    </main> 
   );
 };
