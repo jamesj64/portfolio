@@ -122,7 +122,7 @@ export default function Home() {
               description="Developed Flask server in Python to enable remote control of goose robot over local area network. Implemented object detection, developed client to communicate with Flask server in JS with jQuery and Bootstrap."
             />
           </ul>
-          <h3 className="text-xl text-center mb-8">
+          <h3 className="text-xl text-center pb-8">
             <Advert url="/demos" text="Demos"/>
           </h3>
         </section>
